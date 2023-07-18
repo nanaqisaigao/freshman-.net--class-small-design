@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+/* @import url（）机制是不同于link的，link是在加载页面前把css加载完毕，而@import url（）则是读取完文件后在加载，
+所以会出现一开始没有css样式，闪烁一下出现样式后的页面(网速慢的情况下)
+
+获得天气关于位置有关的数据 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* 字体  sans-serif的意思是如果前面的字体不能用 就用默认的sans-serif字体*/
+}
+
+/* 是一个通配符，也是一个选择器------通用选择器，它的作用是匹配html中所有标签元素，
+包括html标签、body标签等等，所有标签都会继承*里面的属性，除非子标签属性重新被设置。
+一般写在css最开始的位置，来做全局声明。 */
+
+body {
+    background: white;
+    background-attachment: fixed;
+    /* background-attachment有三种值
+    scroll 背景图片附着在背景容器上，相对于背景元素固定
+    fixed 背景图片附着在游览器的可视区域 不可滚动
+    local 背景图片附着在背景容器的内容区域 会随着内容的滚动而滚动
+    
+    */
+    background-blend-mode: hard-light;
+}
+
+.container {
+    position: absolute;
+    /* 相对于*（）的定位 */
+    top: 80px;
+    left: 100px;
+    right: 100px;
+    bottom: 80px;
+    background: url(bg.jpg);
+    background-attachment: fixed;
+    /* background图片附着在游览器可区域 */
+    display: flex;
+    /* flex弹性盒子布局    */
+    justify-content: center;
+    /* 居中块 */
+    align-items: center;
+    /* 交叉轴中点对齐 */
+    flex-direction: column;
+    /* 主轴为垂直方向，起点在上沿 */
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5),
+        0 0 0 100px rgba(0, 0, 0, .1);
+    /* x偏移量 | y偏移量 | 阴影模糊距离(可选) | 阴影扩散距离(可选) | 阴影颜色 */
+
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 10em;
+    line-height: 0.7em;
+    /* 行高 */
+    color: #333;
+    margin-top: -80px;
+}
+
+.container h2 span {
+    display: block;
+    /* 块级盒子能自己定义数据不受其他影响 */
+    font-weight: 300;
+    letter-spacing: 6px;
+    font-size: 0.2em;
+}
+
+.countdown {
+    display: flex;
+    /* 弹性盒子   默认flex-direction为row*/
+    margin-top: 50px;
+    /* 外边距 */
+}
+
+.countdown div {
+    position: relative;
+    /* 相对定位 不改变自身盒子元素大小 */
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.countdown div:before {
+    /* 伪类 在后面加东西 */
+    content: '';
+    /* 创建一个聊天气泡、超链接的立体翻转特效、添加图标。
+    都要使用到content属性，当然这个属性要结合：before和：after伪类使用 */
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background: #ff0;
+    color: #333;
+    font-size: 0.35em;
+    line-height: 35px;
+    font-weight: 300;
+}
+
+/* 在before/after伪元素选择器中，
+有一个content属性，能够实现页面中的内容插入。 */
+.container #day:before {
+    content: 'Days';
+}
+
+.container #hour:before {
+    content: 'Hours';
+}
+
+.container #minute:before {
+    content: 'Minutes';
+}
+
+.container #second:before {
+    content: 'Seconds';
+}

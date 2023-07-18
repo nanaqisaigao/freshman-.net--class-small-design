@@ -1,0 +1,92 @@
+
+
+
+#app {
+    background-color: rgb(239, 239, 235);
+    /* display: block; */
+    /* box-sizing: border-box; */
+    padding:10px 10px;
+    margin:20px 30%;
+    text-align: center;
+    border: 1px solid rgb(130, 118, 118);
+}
+
+.title{
+    display: block;
+    color: blue;
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-align: left;
+}
+
+form{
+    text-align: left;
+    letter-spacing: 0px;
+}
+
+input,
+option,
+select
+{
+ height: 25px;
+}
+
+.table tr{
+display: block;
+padding: 5px;
+}
+
+.yanzhengma{
+    width: 500px;
+    text-align: left;
+    margin-left: 16px;
+}
+
+#capcha{
+    background-color: rgb(181, 181, 215);
+    color: blue;
+    cursor: pointer;
+}
+
+.shengri,
+.nianling,
+.jiguan,
+.xingbie{
+margin-left:30px; 
+}
+
+.jiguan select{
+width: 81px;
+}
+
+.xueli select{
+    width: 165px;
+}
+
+#test-image-preview{
+    border: 1px solid silver; 
+    width: 190px; 
+    margin-left: 80px;
+    height: 200px;
+    background-repeat: no-repeat;  
+    background-position: center;
+    background-color: white;
+}
+
+textarea{
+    border: 1px solid black;
+}
+
+.yanzhengma img{
+    vertical-align: middle;
+    width: 30px;
+    cursor: pointer;
+}
+
+.tijiao{
+    margin-left: 85px;    
+}
+.tijiao [value]{
+    font-weight: 900;
+    font-size: 15px;
+}
