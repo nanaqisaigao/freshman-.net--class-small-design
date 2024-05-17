@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Session权限控制")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32c82b6a2b9eb8ee1b17241d88686e0bec6e6a9d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e890c0ee8be103eb16482153ab67aaf4419ecd47")]
 [assembly: System.Reflection.AssemblyProductAttribute("Session权限控制")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Session权限控制")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

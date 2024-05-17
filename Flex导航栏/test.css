@@ -1,0 +1,45 @@
+
+
+.navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #eee;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+}
+
+.navbar .logo {
+    flex: 1;
+    /*将占满剩余空间*/
+    text-transform: uppercase;
+    padding-left: 10%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 35px;
+    color: purple;
+}
+
+ul {
+    padding: 0px;
+}
+
+.navbar .nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+a {
+    margin: 15px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
