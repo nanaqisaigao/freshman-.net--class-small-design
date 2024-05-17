@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="test.css">
+<form id="login_form" class="form" action="#">
+    <div class="imgcontainer">
+        <span id="close" class="close" title="关闭">&times;</span>
+        <img src="images/img_avatar.png" alt="Avatar" class="avatar">
+    </div>
+    <div class="container">
+        <label><b>用户名</b></label>
+        <input type="text" placeholder="请输入用户名" name="username">
+        <label><b>密&nbsp;&nbsp;码</b></label>
+        <input type="password" placeholder="请输入密码" name="pwd">
+        <button type="submit">登陆</button>
+        <input type="checkbox" checked="checked"> 记住我
+    </div>
+    <div class="container">
+        <button type="button" id="btn_cancel" class="cancelbtn">取消</button>
+        <span class="psw"><a href="#">忘记密码</a></span>
+    </div>
+</form>
+<script>
+    document.getElementById('close').onclick = function () {
+        document.getElementById('login_form').style.display = 'none'; /*隐藏*/
+    }
+    document.getElementById('btn_cancel').onclick = function () {
+        document.getElementById('login_form').style.display = 'none'; /*隐藏*/
+    }
+</script>

@@ -1,0 +1,45 @@
+.sidenav {
+    height: 100%;
+    width: 0px;
+    /*初始宽度=0不显示内容*/
+    background-color: #111;
+    padding-top: 30px;
+    overflow-x: hidden;
+    /*x轴溢出处理*/
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    transition: 0.5s;
+    /*过渡动画*/
+}
+
+.sidenav a:link,
+.sidenav a:visited {
+    text-decoration: none;
+    display: block;
+    /*块级元素*/
+    padding: 8px 8px 8px 32px;
+    font-size: 20px;
+    color: #818181;
+    transition: 0.3s;
+    /*过渡动画*/
+}
+
+.sidenav a:hover,
+.sidenav a:active {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    font-size: 20px;
+}
+
+#main {
+    transition: margin-left 0.5s;
+    /*过渡动画*/
+    padding: 16px;
+}
