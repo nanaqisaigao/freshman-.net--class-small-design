@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ①加载bootstrap的css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <!-- ②加载bootstrap的icon (图标，非必须) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- ③加载bootstrap的js集成包（js推荐放在<body>最下面） -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 其他样式 -->
+    <title>测试</title>
+</head>
+
+<!-- <body>
+
+    <div class="container">
+        <div class="text-end">
+            <a href="#" title="消息"><i class="bi-envelope" style="font-size:18px; "></i></a>
+            <a href="#" title="facebook"><i class="bi-facebook" style="font-size:18px; "></i></a>
+            <a href="#" title="twitter"><i class="bi-twitter" style="font-size:18px; "></i></a>
+            <a href="#" title="退出"><i class="bi-box-arrow-in-up-right" style="font-size:18px; color: red;"></i></a>
+        </div>
+        <h1 class="text-center text-primary my-3"><i class="bi-twitter" style="font-size:18px; "></i>
+            Hello,Bootstrap v5!</h1>
+        <div class="text-center my-5">
+            <img src="images/ST.JPG" class="rounded-circle shadow" style="width: 150px;height: 150px;">
+        </div>
+    </div>
+</body> -->
+
+<!-- 容器设置外间距 -->
+<!-- .my-3：上下margin值为3 -->
+<!-- .px-5：左右padding为5 -->
+<!-- .py-3：上下padding为3 -->
+<!-- .my-5：上下margin值为5 -->
+<!-- 网格系统：宽度控制 -->
+<!-- 通常使用.row类配合网格系统，一行为12列(自适应窗口大小) -->
+<!-- .col-*：宽度占*列(1-12) ，例如：.col-6 表示宽度占6列 -->
+<!-- .col：不写值，则元素宽度均分 -->
+<!-- .col-auto：根据内容自动分配宽度 -->
+<!-- .offset-*设置向右偏移(0-11) -->
+<div class="container border bg-light my-3" style="height: 400px;">
+    <h3>Bootstrap栅格系统</h3>
+    <!-- 第1行（通常使用 .row 作为一行） -->
+    <!-- .col：元素宽度均分 -->
+    <div class="row">
+    <div class="col border text-center bg-info">占6列</div>
+    <div class="col border text-center bg-info">占6列</div>
+    </div>
+    <!-- 第2行（通常使用 .row 作为一行） -->
+    <!-- .col-*：设置元素宽度(1-12) .offset-*设置向右偏移(0-11) -->
+    <div class="row">
+    <div class="col-1 bg-info">占1列</div>
+    <div class="col-3 bg-success">占3列</div>
+    <div class="col-5 offset-3 bg-warning">占5列(向右偏移3列)</div>
+    <!-- 一行挤不下去会自动换行 -->
+    <div class="col-6 bg-warning">占6列</div>
+    <!-- .w-100 强制换行 -->
+    <div class="w-100"></div>
+    <div class="col-3 bg-info">占3列（被强制换行）</div>
+    </div>
+    <!-- 第3行（通常使用 .row 作为一行） -->
+    <!-- .col-auto：根据内容自动分配宽度 -->
+    <div class="row-3">
+    <div class="col border bg-light">column1</div>
+    <div class="col-auto border bg-warning">column2：使用.col-auto
+    会根据内容自动分配宽度</div>
+    <div class="  col border bg-light">column3</div>
+    </div>
+    <!-- 补充：.order-序号 或 .order-first, .order-last 可控制元素的显示的顺序-->
+    </div>
